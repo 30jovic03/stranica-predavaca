@@ -1,9 +1,9 @@
 body {
   font-family: Arial, Helvetica, sans-serif;
+  color: rgb(160, 160, 160);
 }
 h1,
-h2,
-h3 {
+h2 {
   color: #555;
 }
 #container {
@@ -46,7 +46,6 @@ img {
 }
 #info {
   margin-left: 30px;
-  color: rgb(160, 160, 160);
   width: 500px;
 }
 #info h1 {
@@ -64,6 +63,7 @@ img {
 }
 .class-info {
   display: flex;
+  align-items: center;
   justify-content: space-between;
 }
 .rounded {
@@ -81,6 +81,10 @@ img {
 }
 .contact-btn {
   margin: 0 0 0 auto;
+}
+.stars {
+  margin: 0 5px;
+  display: flex;
 }
 #contact {
   margin-top: 20px;
@@ -119,7 +123,6 @@ td {
   width: 40%;
   font-size: 18px;
   font-weight: 400;
-  color: rgb(160, 160, 160);
 }
 .right p {
   margin: 0;
@@ -159,11 +162,6 @@ td button {
   border-radius: 50%;
   overflow: hidden;
   margin-right: 10px;
-}
-.stars {
-  margin: 0 5px;
-  display: flex;
-  color: rgb(176, 221, 53);
 }
 
 @media screen and (max-width: 600px) {
