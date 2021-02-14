@@ -1,35 +1,49 @@
 body {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
   color: rgb(160, 160, 160);
+}
+header {
+  height: 150px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  background-color: rgb(90, 88, 112);
 }
 h1,
 h2 {
   color: #555;
 }
-#container {
+#main {
   width: 100%;
   max-width: 60vw;
   margin: 0 auto;
-  position: relative;
 }
-header {
-  height: 90px;
+a {
+  color: #fff;
+  margin: 10px;
+  text-decoration: none;
+}
+.nav-bar a.active {
+  text-decoration: underline;
+  text-decoration-color: rgb(176, 221, 53);
+  text-decoration-thickness: 3px;
+}
+#container {
   width: 100%;
-  background-color: rgb(60, 43, 100);
+  position: relative;
 }
 section {
   padding-bottom: 40px;
 }
 .grey {
+  position: absolute;
   width: 100%;
   height: 200px;
   background-color: rgb(233, 233, 233);
+  z-index: -1;
 }
 #content {
-  position: absolute;
-  width: 55vw;
-  top: 120px;
-  left: 40px;
+  padding: 35px 30px 0 40px;
 }
 #home {
   display: flex;
@@ -97,9 +111,9 @@ table {
 }
 th {
   width: 100%;
+  padding: 20px;
 }
-th,
-td {
+.list td {
   padding: 20px;
   border-bottom: 1px solid rgb(233, 233, 233);
 }
@@ -137,6 +151,7 @@ input {
   border-bottom-right-radius: 6px;
 }
 td > h2,
+td > h3,
 td > p {
   margin: 0;
   padding: 0;
@@ -151,6 +166,24 @@ td button {
   font-size: 19px;
   padding: 8px 16px;
 }
+#rowUp,
+#rowDown {
+  padding-top: 20px;
+}
+.week {
+  border-collapse: collapse;
+}
+.td-border {
+  width: 20px;
+  height: 45px;
+  border: 1px solid rgb(200, 200, 200);
+}
+.td-right-border {
+  border-right: 1px solid rgb(230, 230, 230);
+}
+#week h3 {
+  font-size: 20px;
+}
 .student {
   width: 220px;
   display: flex;
@@ -162,6 +195,53 @@ td button {
   border-radius: 50%;
   overflow: hidden;
   margin-right: 10px;
+}
+footer {
+  width: 100%;
+  background-color: rgb(90, 88, 112);
+  padding: 40px 10px;
+}
+.footer-menu {
+  display: flex;
+  padding: 10px;
+  flex-direction: row;
+}
+.footer-column {
+  display: flex;
+  flex-direction: column;
+  width: 24%;
+  padding: 20px 40px;
+}
+.vertical-line {
+  border-right: 3px solid #504a5a;
+}
+footer h3,
+h4 {
+  margin-bottom: 0;
+}
+footer h3 {
+  color: #fff;
+}
+footer p {
+  margin: 5px 0;
+}
+footer img {
+  width: 70px;
+}
+footer a {
+  margin: 6px;
+  color: rgb(160, 160, 160);
+}
+.icon-bar {
+  margin-top: 20px;
+  font-size: 23px;
+}
+.icon-bar a {
+  color: #fff;
+}
+.copyright {
+  margin-top: 50px;
+  text-align: center;
 }
 
 @media screen and (max-width: 600px) {
@@ -224,7 +304,7 @@ td button {
     font-size: 13px;
   }
   td button {
-    font-size: 10px;
+    font-size: 9px;
     padding: 4px 8px;
     border-width: 1px;
   }

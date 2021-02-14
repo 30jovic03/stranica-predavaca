@@ -5,210 +5,266 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script defer src="script.js"></script>
   <title>Document</title>
 </head>
 <body>
-  <div id="container">
-    <header></header>
-    <div class="grey"></div>
-    <div id="content">
-      <section id="home">
-        <div class="photo">
-          <img src="https://cdn.pixabay.com/photo/2017/11/19/07/30/girl-2961959_960_720.jpg" alt="profile picture" />
-        </div>
-        <div id="info">
-          <h1>Milica Milutinovic</h1>
-          <h3>Student na Pravnom fakultetu</h3>
-          <hr />
-          <div class="class-info">
-            <p><i class="fa fa-pencil"></i>
-             matematika</p>
-            <p><span class="rounded lime">114</span>
-             odrzanih casova</p>
-            <div class="stars">
-              <i class="fa fa-star" style="color: rgb(176, 221, 53);"></i>
-              <i class="fa fa-star" style="color: rgb(176, 221, 53);"></i>
-              <i class="fa fa-star" style="color: rgb(176, 221, 53);"></i>
-              <i class="fa fa-star" style="color: rgb(176, 221, 53);"></i>
-              <i class="fa fa-star" style="color: rgb(176, 221, 53);"></i>
+  <div id="main">
+    <header>
+      <img style="margin: 0 auto;" src="logo.png" alt="logo" />
+      <nav id="navbar" class="nav-bar" style="margin-right: auto;">
+        <a href="#">Pocetak</a>
+        <a href="#">Kako radi?</a>
+        <a href="#" class="active">Pretrazi kurseve</a>
+        <a href="#">Za profesore</a>
+        <a href="#"><i class="fa fa-sign-in-alt"></i> Prijava</a>
+        <a href="#"><i class="fa fa-pencil"></i> Registracija</a>
+        <a href="#"><i class="fa fa-globe-africa"></i> SRB <i class="fa fa-chevron-down"></i></a>
+      </nav>
+    </header>
+    <div id="container">
+      <div class="grey"></div>
+      <div id="content">
+        <section id="home">
+          <div class="photo">
+            <img src="https://cdn.pixabay.com/photo/2017/11/19/07/30/girl-2961959_960_720.jpg" alt="profile picture" />
+          </div>
+          <div id="info">
+            <h1>Milica Milutinovic</h1>
+            <h3>Student na Pravnom fakultetu</h3>
+            <hr />
+            <div class="class-info">
+              <p><i class="fa fa-pencil"></i>
+               matematika</p>
+              <p><span class="rounded lime">114</span>
+               odrzanih casova</p>
+              <div class="stars">
+                <i class="fa fa-star" style="color: rgb(176, 221, 53);"></i>
+                <i class="fa fa-star" style="color: rgb(176, 221, 53);"></i>
+                <i class="fa fa-star" style="color: rgb(176, 221, 53);"></i>
+                <i class="fa fa-star" style="color: rgb(176, 221, 53);"></i>
+                <i class="fa fa-star" style="color: rgb(176, 221, 53);"></i>
+              </div>
+            </div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque sed nam magnam possimus accusantium debitis temporibus excepturi tempore, tenetur at error sit itaque, atque quo aut aperiam doloribus maxime eveniet.</p>
+          </div>
+          <div class="contact-btn">
+            <button type="button" id="contact" class="rounded lime">kontaktiraj</button>
+          </div>
+        </section>
+        <section id="classes">
+          <table class="list">
+            <thead style="background-color: rgb(233, 233, 233);">
+              <tr>
+                <th colspan="6">
+                  <div class="left">
+                    <h2>Svi casovi <span class="rounded lime">3</span></h2>
+                  </div>
+                  <div class="right">
+                    <i class="fa fa-question-circle"></i> Pretraga
+                    <input type="text" />
+                  </div>
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td colspan="3">
+                  <h2>Uvod u pravo</h2>
+                  <p>za studente pravnog fakulteta</p>
+                </td>
+                <td style="text-align: right; color: rgb(176, 221, 53)">
+                  opis casa <i class="fa fa-chevron-down"></i>
+                </td>
+                <td style="text-align: right;">
+                  <p>1.000,00din/cas</p>
+                </td>
+                <td style="text-align: right;">
+                  <button type="button" class="rounded">zakazi cas</button>
+                </td>
+              </tr>
+              <tr>
+                <td colspan="3">
+                  <h2>Rimsko pravo</h2>
+                  <p>za studente pravnog fakulteta</p>
+                </td>
+                <td style="text-align: right; color: rgb(176, 221, 53)">
+                  opis casa <i class="fa fa-chevron-down"></i>
+                </td>
+                <td style="text-align: right;">
+                  <p>1.000,00din/cas</p>
+                </td style="text-align: right;">
+                <td style="text-align: right;">
+                  <button type="button" class="rounded">zakazi cas</button>
+                </td>
+              </tr>
+              <tr>
+                <td colspan="3">
+                  <h2>Obligaciono pravo</h2>
+                  <p>za studente pravnog fakulteta</p>
+                </td>
+                <td style="text-align: right; color: rgb(176, 221, 53)">
+                  opis casa <i class="fa fa-chevron-down"></i>
+                </td>
+                <td style="text-align: right;">
+                  <p>2.500,00din/cas</p>
+                </td>
+                <td style="text-align: right;">
+                  <button type="button" class="rounded">zakazi cas</button>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+        <section id="week">
+          <table class="week">
+            <thead style="background-color: rgb(233, 233, 233);">
+              <tr>
+                <th colspan="50">
+                  <div class="left">
+                    <h2>Dostupnost predavaca <i class="fa fa-question-circle"></i></h2>
+                  </div>
+                  <div class="right">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit deleniti <span class="rounded lime">GMT+1</span> dolore</p>
+                  </div>
+                </th>
+              </tr>
+            </thead>
+            <tbody></tbody>
+          </table>
+        </section>
+        <section id="comments">
+          <table class="list">
+            <thead style="width: 100%; background-color: rgb(233, 233, 233);">
+              <tr>
+                <th colspan="6">
+                  <div class="left">
+                    <h2>Ocene ucenika</h2>
+                  </div>
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  <div class="student">
+                    <div class="comment-photo">
+                      <img src="https://cdn.pixabay.com/photo/2017/11/19/07/30/girl-2961959_960_720.jpg" alt="comment picture" />
+                    </div>
+                    <h2>Jovan G.</h2>
+                  </div>
+                </td>
+                <td>
+                  <div class="stars">
+                    <i class="fa fa-star" style="color: rgb(176, 221, 53);"></i>
+                    <i class="fa fa-star" style="color: rgb(176, 221, 53);"></i>
+                    <i class="fa fa-star" style="color: rgb(176, 221, 53);"></i>
+                    <i class="fa fa-star" style="color: rgb(176, 221, 53);"></i>
+                    <i class="fa fa-star" style="color: rgb(176, 221, 53);"></i>
+                  </div>
+                </td>
+                <td colspan="4">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam exercitationem doloribus ducimus impedit provident voluptate, ea iusto consequuntur.
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="student">
+                    <div class="comment-photo">
+                      <img src="https://cdn.pixabay.com/photo/2017/11/19/07/30/girl-2961959_960_720.jpg" alt="comment picture" />
+                    </div>
+                    <h2>Jovan G.</h2>
+                  </div>
+                </td>
+                <td>
+                  <div class="stars">
+                    <i class="fa fa-star" style="color: rgb(176, 221, 53);"></i>
+                    <i class="fa fa-star" style="color: rgb(176, 221, 53);"></i>
+                    <i class="fa fa-star" style="color: rgb(176, 221, 53);"></i>
+                    <i class="fa fa-star" style="color: rgb(176, 221, 53);"></i>
+                    <i class="fa fa-star" style="color: rgb(176, 221, 53);"></i>
+                  </div>
+                </td>
+                <td colspan="4">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam exercitationem doloribus ducimus impedit provident voluptate, ea iusto consequuntur.
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="student">
+                    <div class="comment-photo">
+                      <img src="https://cdn.pixabay.com/photo/2017/11/19/07/30/girl-2961959_960_720.jpg" alt="comment picture" />
+                    </div>
+                    <h2>Jovan G.</h2>
+                  </div>
+                </td>
+                <td>
+                  <div class="stars">
+                    <i class="fa fa-star" style="color: rgb(176, 221, 53);"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                  </div>
+                </td>
+                <td colspan="4">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam exercitationem doloribus ducimus impedit provident voluptate, ea iusto consequuntur.
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+      </div>
+    </div>
+    <footer>
+      <div class="footer-menu">
+        <div class="footer-column vertical-line"
+        style="align-items: center;">
+          <img src="logo.png" alt="logo" />
+          <h3>Caocao</h3>
+          <p style="color: #fff;">Portal za e-ucenje</p>
+          <div>
+            <div class="icon-bar">
+              <a href="#"><i class="fa fa-facebook"></i></a>
+              <a href="#"><i class="fa fa-tumblr"></i></a> 
+              <a href="#"><i class="fa fa-pinterest"></i></a>
+              <a href="#"><i class="fa fa-twitter"></i></a> 
             </div>
           </div>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque sed nam magnam possimus accusantium debitis temporibus excepturi tempore, tenetur at error sit itaque, atque quo aut aperiam doloribus maxime eveniet.</p>
         </div>
-        <div class="contact-btn">
-          <button type="button" id="contact" class="rounded lime">kontaktiraj</button>
+        <div class="footer-column vertical-line">
+          <a href="#">Pocetna strana</a>
+          <a href="#">Pretrazi kurseve</a>
+          <a href="#">Uslovi koriscenja</a>
+          <a href="#">O nama</a>
+          <a href="#">Prijava</a>
+          <a href="#">Registracija</a>
         </div>
-      </section>
-      <section id="classes">
-        <table>
-          <thead style="background-color: rgb(233, 233, 233);">
-            <tr>
-              <th colspan="6">
-                <div class="left">
-                  <h2>Svi casovi <span class="rounded lime">3</span></h2>
-                </div>
-                <div class="right">
-                  <i class="fa fa-question-circle"></i> Pretraga
-                  <input type="text" />
-                </div>
-              </th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td colspan="3">
-                <h2>Uvod u pravo</h2>
-                <p>za studente pravnog fakulteta</p>
-              </td>
-              <td style="text-align: right; color: rgb(176, 221, 53)">
-                opis casa <i class="fa fa-chevron-down"></i>
-              </td>
-              <td style="text-align: right;">
-                <p>1.000,00din/cas</p>
-              </td>
-              <td style="text-align: right;">
-                <button type="button" class="rounded">zakazi cas</button>
-              </td>
-            </tr>
-            <tr>
-              <td colspan="3">
-                <h2>Rimsko pravo</h2>
-                <p>za studente pravnog fakulteta</p>
-              </td>
-              <td style="text-align: right; color: rgb(176, 221, 53)">
-                opis casa <i class="fa fa-chevron-down"></i>
-              </td>
-              <td style="text-align: right;">
-                <p>1.000,00din/cas</p>
-              </td style="text-align: right;">
-              <td style="text-align: right;">
-                <button type="button" class="rounded">zakazi cas</button>
-              </td>
-            </tr>
-            <tr>
-              <td colspan="3">
-                <h2>Obligaciono pravo</h2>
-                <p>za studente pravnog fakulteta</p>
-              </td>
-              <td style="text-align: right; color: rgb(176, 221, 53)">
-                opis casa <i class="fa fa-chevron-down"></i>
-              </td>
-              <td style="text-align: right;">
-                <p>2.500,00din/cas</p>
-              </td>
-              <td style="text-align: right;">
-                <button type="button" class="rounded">zakazi cas</button>
-              </td>
-            </tr>
-          </tbody>
-        </table>
-      </section>
-      <section id="week">
-        <table>
-          <thead style="background-color: rgb(233, 233, 233);">
-            <tr>
-              <th colspan="6">
-                <div class="left">
-                  <h2>Dostupnost predavaca <i class="fa fa-question-circle"></i></h2>
-                </div>
-                <div class="right">
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit deleniti <span class="rounded lime">GMT+1</span> dolore</p>
-                </div>
-              </th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>
-                Vreme
-              </td>
-            </tr>
-          </tbody>
-        </table>
-      </section>
-      <section id="comments">
-        <table>
-          <thead style="width: 100%; background-color: rgb(233, 233, 233);">
-            <tr>
-              <th colspan="6">
-                <div class="left">
-                  <h2>Ocene ucenika</h2>
-                </div>
-              </th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>
-                <div class="student">
-                  <div class="comment-photo">
-                    <img src="https://cdn.pixabay.com/photo/2017/11/19/07/30/girl-2961959_960_720.jpg" alt="comment picture" />
-                  </div>
-                  <h2>Jovan G.</h2>
-                </div>
-              </td>
-              <td>
-                <div class="stars">
-                  <i class="fa fa-star" style="color: rgb(176, 221, 53);"></i>
-                  <i class="fa fa-star" style="color: rgb(176, 221, 53);"></i>
-                  <i class="fa fa-star" style="color: rgb(176, 221, 53);"></i>
-                  <i class="fa fa-star" style="color: rgb(176, 221, 53);"></i>
-                  <i class="fa fa-star" style="color: rgb(176, 221, 53);"></i>
-                </div>
-              </td>
-              <td colspan="4">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam exercitationem doloribus ducimus impedit provident voluptate, ea iusto consequuntur.
-              </td>
-            </tr>
-            <tr>
-              <td>
-                <div class="student">
-                  <div class="comment-photo">
-                    <img src="https://cdn.pixabay.com/photo/2017/11/19/07/30/girl-2961959_960_720.jpg" alt="comment picture" />
-                  </div>
-                  <h2>Jovan G.</h2>
-                </div>
-              </td>
-              <td>
-                <div class="stars">
-                  <i class="fa fa-star" style="color: rgb(176, 221, 53);"></i>
-                  <i class="fa fa-star" style="color: rgb(176, 221, 53);"></i>
-                  <i class="fa fa-star" style="color: rgb(176, 221, 53);"></i>
-                  <i class="fa fa-star" style="color: rgb(176, 221, 53);"></i>
-                  <i class="fa fa-star" style="color: rgb(176, 221, 53);"></i>
-                </div>
-              </td>
-              <td colspan="4">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam exercitationem doloribus ducimus impedit provident voluptate, ea iusto consequuntur.
-              </td>
-            </tr>
-            <tr>
-              <td>
-                <div class="student">
-                  <div class="comment-photo">
-                    <img src="https://cdn.pixabay.com/photo/2017/11/19/07/30/girl-2961959_960_720.jpg" alt="comment picture" />
-                  </div>
-                  <h2>Jovan G.</h2>
-                </div>
-              </td>
-              <td>
-                <div class="stars">
-                  <i class="fa fa-star" style="color: rgb(176, 221, 53);"></i>
-                  <i class="fa fa-star"></i>
-                  <i class="fa fa-star"></i>
-                  <i class="fa fa-star"></i>
-                  <i class="fa fa-star"></i>
-                </div>
-              </td>
-              <td colspan="4">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam exercitationem doloribus ducimus impedit provident voluptate, ea iusto consequuntur.
-              </td>
-            </tr>
-          </tbody>
-        </table>
-      </section>
-    </div>
+        <div class="footer-column vertical-line">
+          <a href="#">Matematika</a>
+          <a href="#">Fizika</a>
+          <a href="#">Muzika</a>
+          <a href="#">Biologija</a>
+          <a href="#">Psihologija</a>
+          <a href="#">Informatika</a>
+          <a href="#">Hemija</a>
+        </div>
+        <div class="footer-column">
+          <h4>Korisnicka podrska</h4>
+          <p>email: podrska@caocao.com</p>
+          <p>telefon: +381 64 220110</p>
+          <p>radno vreme podrske: 8-16h</p>
+          <h4>Kontakt:</h4>
+          <p>email: info@caocao.com</p>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>Copyright 2016 | Sva prava zadrzana <br /> Caocao portal za e-ucenje</p>
+      </div>
+    </footer>
   </div>
 </body>
 </html>
