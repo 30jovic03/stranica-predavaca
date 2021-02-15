@@ -1,8 +1,8 @@
 let calendar = {
 	'12/02/2021': {
 		1: {
-			start: '02:30',
-			end: '04:30',
+			start: '22:30',
+			end: '24:00',
     }
 	},
   '13/02/2021': {
@@ -27,7 +27,7 @@ let calendar = {
   },
   '15/02/2021': {
     1: {
-      start: '00:30',
+      start: '00:00',
       end: '02:00',
     },
     2: {
@@ -79,7 +79,7 @@ for (let i = 0; i < 25; i++) {
   } else if (i !== 24) {
     time.push(`${i}:00`);
     time.push(`${i}:30`);
-  } else time.push('00:00');
+  } else time.push('24:00');
 }
 
 let tbodyWeek = document.getElementById('weekBody');
